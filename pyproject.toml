@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "surfacedispersion"
+version = "0.1.0"
+description = "Python port of surfacedispersion.nb with eigensystems, centralizer, and pseudo-Hermiticity checks"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+authors = [{ name = "Your Name" }]
+dependencies = [
+    "numpy>=1.23",
+    "sympy>=1.11",
+]
+
+[project.urls]
+Homepage = "https://example.com"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
